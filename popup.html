@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 300px;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      margin-top: 0;
+    }
+
+    .status {
+      padding: 10px;
+      border-radius: 5px;
+      margin: 10px 0;
+    }
+
+    .success {
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+
+    .error {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+
+    .info {
+      background-color: #d1ecf1;
+      color: #0c5460;
+      border: 1px solid #bee5eb;
+    }
+
+    .warning {
+      background-color: #fff3cd;
+      color: #856404;
+      border: 1px solid #ffeaa7;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      margin: 10px 5px;
+      flex: 1;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    button:disabled {
+      background-color: #6c757d;
+      cursor: not-allowed;
+    }
+
+    #scrapeCurrentBtn {
+      background-color: white;
+      color: #007bff;
+      border: 1px solid #007bff;
+    }
+
+    #scrapeCurrentBtn:hover {
+      background-color: #f8f9fa;
+    }
+
+    #scrapeCurrentBtn:disabled {
+      background-color: #f8f9fa;
+      color: #6c757d;
+      border-color: #6c757d;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 10px;
+      margin: 10px 0;
+    }
+
+    #result {
+      margin-top: 10px;
+      max-height: 170px;
+      overflow-y: auto;
+      border: 1px solid #ddd;
+      padding: 0 10px;
+      border-radius: 5px;
+      background-color: #f8f9fa;
+    }
+
+    .input-group {
+      margin: 12px 0;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Google Messages Scraper</h1>
+    <div id="status" class="status info">
+      Checking current page...
+    </div>
+
+    <div class="input-group">
+      <label for="slugInput">Search Slug</label>
+      <input type="text" id="slugInput" placeholder="Enter slug to search">
+    </div>
+
+    <div class="input-group">
+      <label for="limitInput">Limit</label>
+      <input type="number" id="limitInput" min="1" max="100">
+    </div>
+
+    <div class="input-group">
+      <label for="thresholdDateInput">Threshold Date</label>
+      <input type="datetime-local" id="thresholdDateInput">
+    </div>
+
+    <div class="button-group">
+      <button id="scrapeBtn" disabled>Start Auto Scraping</button>
+      <button id="scrapeCurrentBtn" disabled>Scrape Current Chat</button>
+    </div>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="popup.js"></script>
+</body>
+
+</html>
