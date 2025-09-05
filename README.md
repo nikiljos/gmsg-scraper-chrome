@@ -1,17 +1,18 @@
 # Google Messages Scraper Chrome Extension
 
-A Chrome extension that scrapes messages from unread threads in Google Messages Web (messages.google.com) and sends them to a Google Sheets API.
+A Chrome extension that scrapes your messages from Google Messages Web (messages.google.com) and sends them to a Google Sheets API.
 
 ## Features
 
-- **Automated Message Scraping**: Scrapes messages from Google Messages Web conversations
-- **Multi-Chat Support**: Can scrape multiple conversations containing specific keywords
-- **Date Filtering**: Only scrapes messages after a specified threshold date
-- **Real-time Progress**: Live progress updates with timestamps
-- **Flexible Configuration**: Customizable search terms, limits, and date ranges
-- **API Integration**: Automatically sends scraped data to Google Sheets via wrapper API
+* **🤖 Automated Message Scraping**: Scrapes messages from Google Messages Web conversations
+* **💬 Multi-Chat Support**: Can scrape multiple conversations containing specific keywords
+* **📅 Date Filtering**: Only scrapes messages after a specified threshold date
+* **⏱️ Real-time Progress**: Live progress updates with timestamps
+* **⚙️ Flexible Configuration**: Customizable search terms, limits, and date ranges
+* **🔗 API Integration**: Automatically sends scraped data to Google Sheets via [wrapper API](https://github.com/nikiljos/gsheet-wrapper-api)
 
 ## Demo
+https://github.com/user-attachments/assets/3aa9cfde-b366-4fc4-a842-b2ae36c54454
 
 
 ## How It Works
@@ -23,8 +24,8 @@ A Chrome extension that scrapes messages from unread threads in Google Messages 
    - **Limit**: Maximum number of threads to scrape
    - **Threshold Date**: Only scrape messages after this date
 4. **Choose scraping mode**:
-   - **Start Auto Scraping**: Finds and scrapes multiple conversations automatically
-   - **Scrape Current Chat**: Scrapes only the currently open conversation
+   - **Start Auto Scraping**: Finds and scrapes multiple unread conversations automatically
+   - **Scrape Current Chat**: Scrapes all messages (after threshold) from the currently open conversation
 
 ## Installation
 
