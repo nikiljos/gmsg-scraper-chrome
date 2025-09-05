@@ -1,6 +1,6 @@
 # Google Messages Scraper Chrome Extension
 
-A Chrome extension that scrapes messages from Google Messages Web (messages.google.com) and sends them to a Google Sheets API for data collection and analysis.
+A Chrome extension that scrapes messages from unread threads in Google Messages Web (messages.google.com) and sends them to a Google Sheets API.
 
 ## Features
 
@@ -10,6 +10,9 @@ A Chrome extension that scrapes messages from Google Messages Web (messages.goog
 - **Real-time Progress**: Live progress updates with timestamps
 - **Flexible Configuration**: Customizable search terms, limits, and date ranges
 - **API Integration**: Automatically sends scraped data to Google Sheets via wrapper API
+
+## Demo
+
 
 ## How It Works
 
